@@ -13,7 +13,7 @@
 
 <meta property="og:description" content="23 Ekim 2026 • Ay Işığı Düğün Salonu">
 
-<meta property="og:image" content="one.jpeg">
+<meta property="og:image" content="hilal-hasan.jpeg">
 
 <meta property="og:type" content="website">
 
@@ -55,6 +55,29 @@ text-size-adjust:100%;
 }
 
 /*=============================
+ÇİÇEKLİ KÖŞELER
+=============================*/
+
+.hero-card::before,
+.hero-card::after{
+
+content:"";
+
+position:absolute;
+
+width:140px;
+height:140px;
+
+opacity:.18;
+
+pointer-events:none;
+
+background-repeat:no-repeat;
+background-size:contain;
+
+}
+
+/*=============================
 MÜZİK
 =============================*/
 
@@ -88,7 +111,7 @@ height:100%;
 
 z-index:9999;
 
-background:#000 url("zarf-on.png.png") center center no-repeat;
+background:#000 url("zarf-on.png.PNG") center center no-repeat;
 
 background-size:cover;
 
@@ -141,149 +164,36 @@ display:block;
 }
 
 /*=============================
-TASARIMLI DAVETİYE KARTI
+DAVETİYE GÖRSELİ
 =============================*/
 
-.custom-wedding-card {
-  position: relative;
-  width: 100%;
-  max-width: 650px;
-  margin: 20px auto 30px;
-  aspect-ratio: 1 / 1;
-  background: #fbf8f1 url('https://www.transparenttextures.com/patterns/paper-fibers.png');
-  border-radius: 24px;
-  overflow: hidden;
-  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
-  border: 1px solid rgba(212, 175, 55, 0.3);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 30px;
+.invitation-top{
+
+position:relative;
+
+width:100%;
+
+max-width:700px;
+
+margin:auto;
+
 }
 
-/* Çiçek Arka Plan Süslemeleri */
-.floral-bg-top {
-  position: absolute;
-  top: -20px;
-  left: -20px;
-  width: 180px;
-  opacity: 0.85;
-  pointer-events: none;
-  z-index: 1;
-}
+.invitation-image{
 
-.floral-bg-bottom {
-  position: absolute;
-  bottom: -20px;
-  right: -20px;
-  width: 220px;
-  opacity: 0.85;
-  pointer-events: none;
-  z-index: 1;
-}
+display:block;
 
-/* Sol Taraf: İsimler ve Monogram */
-.card-left-content {
-  width: 48%;
-  z-index: 2;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+width:100%;
 
-.monogram-badge {
-  width: 75px;
-  height: 75px;
-  border-radius: 50%;
-  border: 1px dashed #d4af37;
-  outline: 4px solid rgba(212, 175, 55, 0.15);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Cinzel', serif;
-  font-size: 20px;
-  color: #b4872d;
-  letter-spacing: 2px;
-  margin-bottom: 20px;
-  background: rgba(255, 255, 255, 0.6);
-}
+height:auto;
 
-.names-title {
-  font-family: 'Great Vibes', cursive;
-  font-size: 46px;
-  color: #b4872d;
-  line-height: 1.1;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.05);
-}
+border-radius:24px;
 
-.ampersand {
-  font-family: 'Cinzel', serif;
-  font-size: 18px;
-  color: #c79b3b;
-  margin: 10px 0;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
+object-fit:cover;
 
-.ampersand::before, .ampersand::after {
-  content: "";
-  width: 30px;
-  height: 1px;
-  background: #d4af37;
-}
+box-shadow:
+0 8px 24px rgba(0,0,0,.08);
 
-.heart-divider {
-  color: #d4af37;
-  font-size: 14px;
-  margin-top: 15px;
-}
-
-/* Sağ Taraf: Suluboya Efektli Fotoğraf */
-.card-right-photo {
-  width: 48%;
-  height: 85%;
-  z-index: 2;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.photo-wrapper {
-  width: 100%;
-  height: 100%;
-  border-radius: 42% 58% 65% 35% / 45% 45% 55% 55%;
-  overflow: hidden;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-  border: 4px solid rgba(255, 255, 255, 0.8);
-}
-
-.photo-wrapper img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* Mobil Uyum */
-@media (max-width: 550px) {
-  .custom-wedding-card {
-    flex-direction: column-reverse;
-    aspect-ratio: auto;
-    padding: 25px 15px;
-    gap: 20px;
-  }
-  .card-left-content, .card-right-photo {
-    width: 100%;
-  }
-  .card-right-photo {
-    height: 260px;
-  }
-  .names-title {
-    font-size: 38px;
-  }
 }
 
 .hero-card{
@@ -292,7 +202,7 @@ position:relative;
 
 max-width:760px;
 
-margin:20px auto;
+margin:30px auto;
 
 padding:18px;
 
@@ -310,6 +220,52 @@ overflow:hidden;
 }
 
 /*=============================
+BİLGİLER
+=============================*/
+
+.hero-info{
+
+margin-top:-180px;
+
+padding:0 24px 30px;
+
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
+
+gap:28px;
+
+position:relative;
+
+z-index:10;
+
+}
+
+.hero-info::before{
+
+content:"";
+
+position:absolute;
+
+top:18px;
+
+left:50%;
+
+transform:translateX(-50%);
+
+width:90px;
+
+height:3px;
+
+background:#d4af37;
+
+border-radius:20px;
+
+}
+
+/*=============================
 DAVET METNİ
 =============================*/
 
@@ -317,7 +273,7 @@ DAVET METNİ
 
 max-width:600px;
 
-margin:20px auto 25px;
+margin:45px auto 25px;
 
 padding:0 28px;
 
@@ -522,6 +478,34 @@ transparent);
 
 }
 
+.event-date{
+
+font-family:'Cinzel',serif;
+
+font-size:30px;
+
+font-weight:600;
+
+color:#222;
+
+margin-bottom:8px;
+
+}
+
+.event-time{
+
+font-size:16px;
+
+letter-spacing:4px;
+
+text-transform:uppercase;
+
+color:#9b7a2f;
+
+font-weight:600;
+
+}
+
 /*=============================
 PREMIUM GERİ SAYIM
 =============================*/
@@ -649,7 +633,7 @@ color:#7d7362;
 }
 
 /*=============================
-SALON & BİLGİ
+SALON
 =============================*/
 
 .gold-button{
@@ -952,10 +936,6 @@ gap:18px;
 
 margin-bottom:18px;
 
-position:relative;
-
-padding-bottom:18px;
-
 }
 
 .car-icon{
@@ -984,6 +964,16 @@ letter-spacing:2px;
 
 }
 
+.convoy-header{
+
+position:relative;
+
+padding-bottom:18px;
+
+margin-bottom:30px;
+
+}
+
 .convoy-header::after{
 
 content:"";
@@ -1005,6 +995,32 @@ background:linear-gradient(
 transparent,
 #d4af37,
 transparent);
+
+}
+
+.info-item{
+
+margin-bottom:18px;
+
+font-size:17px;
+
+line-height:1.8;
+
+text-align:center;
+
+color:#444;
+
+}
+
+.full-card p{
+
+line-height:1.9;
+
+color:#555;
+
+margin-bottom:25px;
+
+text-align:center;
 
 }
 
@@ -1043,130 +1059,153 @@ grid-column:1 / span 2;
 
 <div class="hero-card">
 
-    <!-- ÖZEL TASARIMLI ÇERÇEVE ALANI -->
-    <div class="custom-wedding-card">
-        <!-- Sol Taraf: Logo ve İsimler -->
-        <div class="card-left-content">
-            <div class="monogram-badge">H | H</div>
-            <div class="names-title">
-                Hilal
-                <div class="ampersand">&</div>
-                Hasan
-            </div>
-            <div class="heart-divider">♥</div>
-        </div>
+    <img src="hilal-hasan.jpeg" class="invitation-image" alt="Hilal & Hasan Kına & Düğün Davetiyesi">
 
-        <!-- Sağ Taraf: Suluboya Şekilli Çift Fotoğrafı -->
-        <div class="card-right-photo">
-            <div class="photo-wrapper">
-                <img src="one.jpeg" alt="Hilal & Hasan">
-            </div>
-        </div>
+<!-- Davet Metni -->
+
+<div class="invite-text">
+
+<div class="invite-flower">❦</div>
+
+<p>
+
+Hayatımızın en anlamlı yolculuğuna birlikte
+adım atarken, bu özel günümüzde mutluluğumuzu
+sizlerle paylaşmaktan büyük onur duyacağız.
+
+<br><br>
+
+Sevincimize ortak olmanız ve bu güzel
+anımızda yanımızda olmanız dileğiyle...
+
+</p>
+
+</div>
+
+<div class="event-box">
+
+    <h2>ETKİNLİĞE KALAN SÜRE</h2>
+
+</div>
+
+<!-- Sayaç -->
+
+<div id="countdown">
+
+    <div class="counter-box">
+        <span id="days">00</span>
+        <small>Gün</small>
     </div>
 
-    <!-- Davet Metni -->
-    <div class="invite-text">
-        <div class="invite-flower">❦</div>
-        <p>
-            Hayatımızın en anlamlı yolculuğuna birlikte
-            adım atarken, bu özel günümüzde mutluluğumuzu
-            sizlerle paylaşmaktan büyük onur duyacağız.
-            <br><br>
-            Sevincimize ortak olmanız ve bu güzel
-            anımızda yanımızda olmanız dileğiyle...
-        </p>
+    <div class="counter-box">
+        <span id="hours">00</span>
+        <small>Saat</small>
     </div>
 
-    <div class="event-box">
-        <h2>ETKİNLİĞE KALAN SÜRE</h2>
+    <div class="counter-box">
+        <span id="minutes">00</span>
+        <small>Dakika</small>
     </div>
 
-    <!-- Sayaç -->
-    <div id="countdown">
-        <div class="counter-box">
-            <span id="days">00</span>
-            <small>Gün</small>
-        </div>
-        <div class="counter-box">
-            <span id="hours">00</span>
-            <small>Saat</small>
-        </div>
-        <div class="counter-box">
-            <span id="minutes">00</span>
-            <small>Dakika</small>
-        </div>
-        <div class="counter-box">
-            <span id="seconds">00</span>
-            <small>Saniye</small>
-        </div>
+    <div class="counter-box">
+        <span id="seconds">00</span>
+        <small>Saniye</small>
     </div>
 
-    <div class="info-card full-card">
+</div>
+
+<div class="info-card full-card">
+
         <h2>Kına & Düğün Bilgileri</h2>
 
-        <div class="info-grid">
-            <div class="info-box">
-                <div class="info-icon">
-                    <i class="fa-regular fa-calendar"></i>
-                </div>
-                <div class="info-title">TARİH</div>
-                <div class="info-value">23 Ekim 2026</div>
-            </div>
+       <div class="info-grid">
 
-            <div class="info-box">
-                <div class="info-icon">
-                    <i class="fa-regular fa-clock"></i>
-                </div>
-                <div class="info-title">SAAT</div>
-                <div class="info-value">19:00</div>
-            </div>
+    <div class="info-box">
+        <div class="info-icon">
+    <i class="fa-regular fa-calendar"></i>
+</div>
+        <div class="info-title">TARİH</div>
+        <div class="info-value">
+            23 Ekim 2026
+        </div>
+    </div>
 
-            <div class="info-box">
-                <div class="info-icon">
-                    <i class="fa-solid fa-location-dot"></i>
-                </div>
-                <div class="info-title">MEKAN</div>
-                <div class="info-value">Ay Işığı Düğün Salonu</div>
-            </div>
+    <div class="info-box">
+        <div class="info-icon">
+    <i class="fa-regular fa-clock"></i>
+</div>
+        <div class="info-title">SAAT</div>
+        <div class="info-value">
+            19:00
+        </div>
+    </div>
+
+    <div class="info-box">
+        <div class="info-icon">
+    <i class="fa-solid fa-location-dot"></i>
+</div>
+        <div class="info-title">MEKAN</div>
+        <div class="info-value">
+            Ay Işığı Düğün Salonu
+        </div>
+    </div>
+
+</div>
+
+<div class="button-group">
+
+    <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Hilal%20%26%20Hasan%20Kına%20%26%20Düğünü&dates=20261023T160000Z/20261023T200000Z&location=Ay%20Işığı%20Düğün%20Salonu&details=Sizleri%20kına%20ve%20düğünümüze%20bekliyoruz." target="_blank" class="gold-button">
+
+    📅 Takvime Ekle
+
+    </a>
+
+    <a href="https://www.google.com/maps/search/?api=1&query=Ay+Işığı+Düğün+Salonu" target="_blank" class="gold-button">
+
+    📍 Haritada Aç
+
+    </a>
+
+</div>
+
+</div> <!-- info-card -->
+
+<div class="cards-grid">
+
+    <!-- Yemek İkramı Kartı -->
+    <div class="full-card">
+
+        <div class="info-title-top">BİLGİLENDİRME</div>
+
+        <div class="convoy-header">
+            <h2>YEMEK İKRAMI</h2>
         </div>
 
-        <div class="button-group">
-            <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Hilal%20%26%20Hasan%20Kına%20%26%20Düğünü&dates=20261023T160000Z/20261023T200000Z&location=Ay%20Işığı%20Düğün%20Salonu&details=Sizleri%20kına%20ve%20düğünümüze%20bekliyoruz." target="_blank" class="gold-button">
-                📅 Takvime Ekle
-            </a>
-            <a href="https://www.google.com/maps/search/?api=1&query=41.5636038812422,35.88264526644858" target="_blank" class="gold-button">
-                📍 Haritada Aç
-            </a>
-        </div>
-    </div> <!-- info-card -->
+        <p>
+            Damat evinde yemek ikramı olacaktır.<br><br>
+            <strong>Saat:</strong> 15:00 - 17:00<br><br>
+            <strong>Adres:</strong> Gazipaşa Mah. Oğuzhan Cd. No:43
+        </p>
 
-    <div class="cards-grid">
-        <!-- Yemek İkramı Kartı -->
-        <div class="full-card">
-            <div class="info-title-top">BİLGİLENDİRME</div>
-            <div class="convoy-header">
-                <h2>YEMEK İKRAMI</h2>
-            </div>
-            <p>
-                Damat evinde yemek ikramı olacaktır.<br><br>
-                <strong>Saat:</strong> 15:00 - 17:00<br><br>
-                <strong>Adres:</strong> Gazipaşa Mah. Oğuzhan Cd. No:43
-            </p>
+    </div>
+
+    <!-- Konvoy Kartı -->
+    <div class="full-card">
+
+        <div class="convoy-header">
+            <img src="Car.PNG" class="car-icon" alt="Klasik Düğün Arabası">
+            <h2>KONVOY</h2>
         </div>
 
-        <!-- Konvoy Kartı -->
-        <div class="full-card">
-            <div class="convoy-header">
-                <img src="Car.PNG" class="car-icon" alt="Klasik Düğün Arabası">
-                <h2>KONVOY</h2>
-            </div>
-            <p>
-                <strong>Saat 17:00'de</strong><br><br>
-                Konvoy ile gelin almaya gidilecektir.<br><br>
-                Konvoyumuza katılarak bu özel günümüzde bizlerle birlikte olmanızdan büyük mutluluk duyarız.
-            </p>
-        </div>
-    </div> <!-- cards-grid -->
+        <p>
+            <strong>Saat 17:00'de</strong><br><br>
+            Konvoy ile gelin almaya gidilecektir.<br><br>
+            Konvoyumuza katılarak bu özel günümüzde bizlerle birlikte olmanızdan büyük mutluluk duyarız.
+        </p>
+
+    </div>
+
+</div> <!-- cards-grid -->
 
 </div> <!-- hero-card -->
 
