@@ -1,137 +1,1275 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="tr">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f8f5f0">
-  <meta name="description" content="Hilal ve Hasan'ın düğün davetiyesi — 23 Ekim 2026, Bafra / Samsun.">
-  <title>Hilal &amp; Hasan | Düğün Davetiyesi</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <style>
-    :root { --ink:#423a35; --muted:#85776e; --gold:#ad8c60; --paper:#fbf9f5; --line:#e8dfd4; }
-    * { box-sizing:border-box; }
-    html { scroll-behavior:smooth; }
-    body { margin:0; background:var(--paper); color:var(--ink); font-family:Montserrat, sans-serif; }
-    .page { width:min(100% - 30px, 760px); margin:28px auto; background:#fffdfa; border:1px solid var(--line); box-shadow:0 18px 60px #57432b12; position:relative; overflow:hidden; }
-    .page:before,.page:after { content:""; position:absolute; inset:12px; border:1px solid #c9b18e55; pointer-events:none; z-index:2; }
-    .hero { min-height:690px; display:grid; grid-template-rows:1fr auto; position:relative; background:#d9d5cf; }
-    .hero img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center 52%; filter:grayscale(1); }
-    .hero:after { content:""; position:absolute; inset:0; background:linear-gradient(180deg,#16161618 0%,#15110d22 40%,#17110dba 100%); }
-    .hero-content { position:relative; z-index:1; align-self:end; text-align:center; color:white; padding:70px 24px 54px; }
-    .eyebrow { font-size:10px; letter-spacing:.35em; text-transform:uppercase; }
-    h1 { font:500 clamp(54px,10vw,88px)/.95 "Cormorant Garamond",serif; margin:18px 0 12px; letter-spacing:.02em; }
-    .amp { color:#e2c9a6; font-style:italic; }
-    .date-line { font-size:11px; letter-spacing:.26em; text-transform:uppercase; }
-    .intro { padding:52px 36px 44px; text-align:center; }
-    .ornament { color:var(--gold); font:30px "Cormorant Garamond",serif; margin-bottom:14px; }
-    .intro p { max-width:520px; margin:0 auto; color:#766b62; font:21px/1.55 "Cormorant Garamond",serif; }
-    .countdown-wrap { padding:30px 20px 38px; text-align:center; background:#f8f5ef; }
-    h2 { font:500 29px "Cormorant Garamond",serif; margin:0 0 22px; }
-    .countdown { display:flex; justify-content:center; gap:clamp(12px,4vw,38px); }
-    .countdown div { min-width:54px; }
-    .countdown strong { display:block; font:500 38px/1 "Cormorant Garamond",serif; color:var(--gold); }
-    .countdown span { display:block; margin-top:8px; font-size:9px; letter-spacing:.18em; color:var(--muted); text-transform:uppercase; }
-    .details { padding:46px 32px 42px; text-align:center; }
-    .details-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; max-width:620px; margin:0 auto; }
-    .detail { padding:19px 10px; border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
-    .detail .label { color:var(--gold); font-size:9px; letter-spacing:.22em; margin-bottom:10px; }
-    .detail .value { font:22px/1.2 "Cormorant Garamond",serif; }
-    .detail .sub { color:var(--muted); font-size:10px; line-height:1.6; margin-top:6px; }
-    .schedule { margin:0 22px 42px; padding:32px 26px; background:#f8f5ef; text-align:center; }
-    .schedule h2 { margin-bottom:8px; }
-    .schedule .lead { color:var(--muted); font:italic 16px "Cormorant Garamond",serif; margin:0 0 22px; }
-    .event { max-width:510px; margin:0 auto; padding:14px 0; border-top:1px solid var(--line); display:grid; grid-template-columns:95px 1fr; gap:15px; text-align:left; }
-    .event-time { color:var(--gold); font-size:11px; font-weight:600; letter-spacing:.06em; padding-top:3px; }
-    .event-title { font:21px "Cormorant Garamond",serif; margin:0 0 5px; }
-    .event-desc { color:#786e65; font-size:11px; line-height:1.7; margin:0; }
-    .footer { text-align:center; padding:0 25px 50px; color:var(--muted); }
-    .footer .names { font:italic 28px "Cormorant Garamond",serif; color:var(--gold); }
-    .footer p { font-size:10px; letter-spacing:.1em; margin:8px 0 0; }
-    @media(max-width:560px) {
-      .page { width:100%; margin:0; border:0; }
-      .page:before,.page:after { inset:8px; }
-      .hero { min-height:590px; }
-      .intro { padding:42px 26px 35px; }
-      .intro p { font-size:19px; }
-      .details { padding:38px 20px; }
-      .details-grid { grid-template-columns:1fr; gap:0; }
-      .detail { border-bottom:0; padding:15px 8px; }
-      .detail:last-child { border-bottom:1px solid var(--line); }
-      .schedule { margin:0 16px 34px; padding:28px 18px; }
-      .event { grid-template-columns:76px 1fr; gap:10px; }
-    }
-  </style>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+<title>Hilal & Hasan</title>
+
+<meta property="og:title" content="💍 Hilal & Hasan Düğün Davetiyesi">
+
+<meta property="og:description" content="21 Ağustos 2026 • Altınkum Sosyal Tesisleri • Atakum / Samsun">
+
+<meta property="og:image" content="hilal-hasan.jpeg">
+
+<meta property="og:type" content="website">
+
+<meta property="og:site_name" content="Hilal & Hasan">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html,
+body{
+
+width:100%;
+min-height:100vh;
+overflow:hidden;
+
+font-family:'Montserrat',sans-serif;
+
+background:#000;
+
+}
+
+body{
+
+position:relative;
+
+-webkit-text-size-adjust:100%;
+text-size-adjust:100%;
+
+}
+
+/*=============================
+ÇİÇEKLİ KÖŞELER
+=============================*/
+
+.hero-card::before,
+.hero-card::after{
+
+content:"";
+
+position:absolute;
+
+width:140px;
+height:140px;
+
+opacity:.18;
+
+pointer-events:none;
+
+background-repeat:no-repeat;
+background-size:contain;
+
+}
+
+/*=============================
+MÜZİK
+=============================*/
+
+audio{
+
+display:none;
+
+}
+
+/*=============================
+GENEL EKRANLAR
+=============================*/
+
+.screen{
+
+position:fixed;
+
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+}
+
+/*=============================
+ÖN ZARF
+=============================*/
+
+#envelope-screen{
+
+z-index:9999;
+
+background:#000 url("zarf-on.png.PNG") center center no-repeat;
+
+background-size:cover;
+
+}
+
+@media (min-width:768px){
+
+#envelope-screen{
+
+background-size:contain;
+
+}
+
+}
+
+/*=============================
+İÇ DAVETİYE
+=============================*/
+
+#card-screen{
+
+position:fixed;
+
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+background:
+linear-gradient(
+180deg,
+#f7f1e8 0%,
+#f8f4ee 30%,
+#fbf8f3 100%);
+
+opacity:0;
+visibility:hidden;
+
+overflow-x:hidden;
+overflow-y:auto;
+-webkit-overflow-scrolling:touch;
+
+z-index:999;
+
+transition:opacity .8s ease;
+
+display:block;
+
+}
+
+/*=============================
+DAVETİYE GÖRSELİ
+=============================*/
+
+.invitation-top{
+
+position:relative;
+
+width:100%;
+
+max-width:700px;
+
+margin:auto;
+
+}
+
+.invitation-image{
+
+display:block;
+
+width:100%;
+
+height:auto;
+
+border-radius:24px;
+
+object-fit:cover;
+
+box-shadow:
+0 8px 24px rgba(0,0,0,.08);
+
+}
+
+.hero-card{
+
+position:relative;
+
+max-width:760px;
+
+margin:30px auto;
+
+padding:18px;
+
+background:#fbf8f2;
+
+border:1px solid rgba(200,161,90,.45);
+
+border-radius:32px;
+
+box-shadow:
+0 18px 45px rgba(0,0,0,.08);
+
+overflow:hidden;
+
+}
+
+/*=============================
+BİLGİLER
+=============================*/
+
+.hero-info{
+
+margin-top:-180px;
+
+padding:0 24px 30px;
+
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
+
+gap:28px;
+
+position:relative;
+
+z-index:10;
+
+}
+
+.hero-info::before{
+
+content:"";
+
+position:absolute;
+
+top:18px;
+
+left:50%;
+
+transform:translateX(-50%);
+
+width:90px;
+
+height:3px;
+
+background:#d4af37;
+
+border-radius:20px;
+
+}
+
+/*=============================
+DAVET METNİ
+=============================*/
+
+.invite-text{
+
+max-width:600px;
+
+margin:45px auto 25px;
+
+padding:0 28px;
+
+text-align:center;
+
+}
+
+.invite-flower{
+
+font-size:22px;
+
+color:#c79b3b;
+
+margin-bottom:18px;
+
+}
+
+.invite-text p{
+
+font-family:'Montserrat',sans-serif;
+
+font-size:17px;
+
+line-height:2;
+
+color:#5b5347;
+
+font-weight:400;
+
+}
+
+/*==================================
+MÜHÜR TIKLAMA ALANI
+==================================*/
+
+#seal-hitbox{
+
+position:absolute;
+
+left:50%;
+top:53%;
+
+width:150px;
+height:150px;
+
+transform:translate(-50%,-50%);
+
+cursor:pointer;
+
+z-index:100;
+
+border-radius:50%;
+
+background:transparent;
+
+}
+
+/*==================================
+ZARF AÇILIŞI
+==================================*/
+
+#envelope-screen.open{
+
+animation:
+openEnvelope 1.8s ease forwards;
+
+}
+
+@keyframes openEnvelope{
+
+0%{
+
+transform:
+scale(1);
+
+opacity:1;
+
+}
+
+35%{
+
+transform:
+scale(1.02);
+
+}
+
+100%{
+
+transform:
+translateY(-100%);
+
+opacity:0;
+
+}
+
+}
+
+#envelope-screen.open{
+
+pointer-events:none;
+
+visibility:hidden;
+
+}
+
+/*==================================
+DAVETİYE
+==================================*/
+
+#card-screen.show{
+
+opacity:1;
+
+visibility:visible;
+
+animation:cardUp 1.4s ease;
+
+}
+
+@keyframes cardUp{
+
+0%{
+
+opacity:0;
+
+transform:
+translateY(120px);
+
+}
+
+100%{
+
+opacity:1;
+
+transform:
+translateY(0);
+
+}
+
+}
+
+/*=============================
+ETKİNLİK
+=============================*/
+
+.event-box{
+
+text-align:center;
+
+padding:20px 20px 35px;
+
+position:relative;
+
+}
+
+.event-box h2{
+
+font-family:'Cinzel',serif;
+
+font-size:24px;
+
+font-weight:600;
+
+color:#b4872d;
+
+letter-spacing:3px;
+
+text-transform:uppercase;
+
+text-align:center;
+
+margin:0 auto 30px;
+
+position:relative;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+gap:18px;
+
+}
+
+.event-box h2::before,
+.event-box h2::after{
+
+content:"";
+
+display:block;
+
+width:80px;
+
+height:1px;
+
+background:linear-gradient(
+90deg,
+transparent,
+#d4af37,
+transparent);
+
+}
+
+.event-date{
+
+font-family:'Cinzel',serif;
+
+font-size:30px;
+
+font-weight:600;
+
+color:#222;
+
+margin-bottom:8px;
+
+}
+
+.event-time{
+
+font-size:16px;
+
+letter-spacing:4px;
+
+text-transform:uppercase;
+
+color:#9b7a2f;
+
+font-weight:600;
+
+}
+
+/*=============================
+PREMIUM GERİ SAYIM
+=============================*/
+
+#countdown{
+
+display:flex;
+justify-content:center;
+align-items:center;
+gap:24px;
+flex-wrap:wrap;
+
+margin:15px 0 35px;
+
+}
+
+.counter-box{
+
+position:relative;
+
+width:100px;
+height:100px;
+
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+
+border-radius:50%;
+
+background:
+radial-gradient(circle at 35% 30%,
+#ffffff 0%,
+#fbf6ec 45%,
+#efe1c3 100%);
+
+border:2px solid #cfa64d;
+
+box-shadow:
+0 10px 24px rgba(0,0,0,.08),
+inset 0 2px 4px rgba(255,255,255,.95),
+inset 0 -6px 12px rgba(190,150,70,.18);
+
+transition:.35s;
+
+}
+
+.counter-box:hover{
+
+transform:translateY(-4px);
+
+box-shadow:
+0 16px 30px rgba(0,0,0,.12),
+inset 0 2px 4px rgba(255,255,255,.95);
+
+}
+
+.counter-box::before{
+
+content:"";
+
+position:absolute;
+
+top:7px;
+left:7px;
+right:7px;
+bottom:7px;
+
+border:1px solid rgba(212,175,55,.55);
+
+border-radius:50%;
+
+}
+
+.counter-box::after{
+
+content:"❦";
+
+position:absolute;
+
+top:-10px;
+
+left:50%;
+
+transform:translateX(-50%);
+
+font-size:14px;
+
+color:#d4af37;
+
+background:#fbf8f2;
+
+padding:0 5px;
+
+}
+
+.counter-box span{
+
+font-family:'Cinzel',serif;
+
+font-size:28px;
+
+font-weight:700;
+
+color:#b4872d;
+
+line-height:1;
+
+margin-bottom:8px;
+
+}
+
+.counter-box small{
+
+font-size:11px;
+
+letter-spacing:3px;
+
+font-weight:600;
+
+text-transform:uppercase;
+
+color:#7d7362;
+
+}
+
+/*=============================
+SALON
+=============================*/
+
+.gold-button{
+
+display:inline-block;
+
+min-width:180px;
+
+padding:16px 20px;
+
+background:linear-gradient(135deg,#d4af37,#b78d32);
+
+color:#fff;
+
+text-decoration:none;
+
+border-radius:50px;
+
+font-weight:600;
+
+letter-spacing:.5px;
+
+box-shadow:0 10px 24px rgba(183,141,50,.35);
+
+transition:.3s;
+
+}
+
+.button-group{
+
+display:flex;
+
+justify-content:center;
+
+gap:14px;
+
+flex-wrap:wrap;
+
+margin-top:20px;
+
+}
+
+.info-grid{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+margin:30px 0;
+
+border-top:1px solid rgba(212,175,55,.25);
+
+border-bottom:1px solid rgba(212,175,55,.25);
+
+}
+
+.info-box{
+
+padding:20px 12px;
+
+text-align:center;
+
+}
+
+.info-box:not(:last-child){
+
+border-right:1px solid rgba(212,175,55,.25);
+
+}
+
+.info-icon{
+
+font-size:16px;
+
+width:42px;
+
+height:42px;
+
+margin:0 auto 12px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+border:1.5px solid rgba(212,175,55,.35);
+
+border-radius:50%;
+
+background:#fffdf9;
+
+box-shadow:0 2px 8px rgba(0,0,0,.04);
+
+}
+
+.info-title{
+
+font-family:'Cinzel',serif;
+
+font-size:11px;
+
+letter-spacing:2px;
+
+color:#b4872d;
+
+margin-bottom:14px;
+
+}
+
+.info-value{
+
+font-size:14px;
+
+line-height:1.7;
+
+font-weight:600;
+
+color:#444;
+
+}
+
+.gold-button:hover{
+
+background:#8d6820;
+
+}
+
+.full-card,
+.small-card{
+
+width:100%;
+max-width:760px;
+
+margin:0 auto 35px;
+
+background:linear-gradient(
+180deg,
+#fffefb 0%,
+#fcf8ef 55%,
+#f7f0e3 100%);
+
+border:1px solid rgba(212,175,55,.45);
+
+border-radius:30px;
+
+padding:34px;
+
+position:relative;
+
+overflow:hidden;
+
+box-sizing:border-box;
+
+box-shadow:
+0 18px 45px rgba(0,0,0,.08),
+0 3px 10px rgba(212,175,55,.10);
+
+}
+
+.full-card::before,
+.small-card::before{
+
+content:"✦";
+
+position:absolute;
+
+top:16px;
+left:18px;
+
+font-size:20px;
+
+color:#d4af37;
+
+opacity:.65;
+
+}
+
+.full-card::after,
+.small-card::after{
+
+content:"✦";
+
+position:absolute;
+
+right:18px;
+bottom:16px;
+
+font-size:20px;
+
+color:#d4af37;
+
+opacity:.65;
+
+}
+
+.full-card{
+
+margin-bottom:28px;
+
+}
+
+.cards-grid{
+
+max-width:760px;
+
+margin:55px auto 0;
+
+padding:0 18px;
+
+display:flex;
+
+flex-direction:column;
+
+gap:35px;
+
+box-sizing:border-box;
+
+}
+
+.full-card h2,
+.small-card h2{
+
+font-family:'Cinzel',serif;
+
+font-size:28px;
+
+font-weight:600;
+
+letter-spacing:1px;
+
+color:#b4872d;
+
+text-align:center;
+
+margin-bottom:16px;
+
+position:relative;
+
+}
+
+.full-card p{
+
+line-height:1.9;
+
+color:#555;
+
+margin-bottom:25px;
+
+text-align:center;
+
+}
+
+.full-card h2::after,
+.small-card h2::after{
+
+content:"";
+
+display:block;
+
+width:70px;
+
+height:2px;
+
+margin:12px auto 0;
+
+background:linear-gradient(
+90deg,
+transparent,
+#d8b15a,
+transparent);
+
+}
+
+.info-title-top{
+
+font-family:'Cinzel',serif;
+
+font-size:13px;
+
+letter-spacing:5px;
+
+text-align:center;
+
+color:#b4872d;
+
+margin-bottom:20px;
+
+}
+
+.convoy-header{
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+gap:18px;
+
+margin-bottom:18px;
+
+}
+
+.car-icon{
+
+width:95px;
+
+height:auto;
+
+filter:drop-shadow(0 6px 12px rgba(0,0,0,.08));
+
+}
+
+.convoy-header h2{
+
+margin:0;
+
+font-family:'Cinzel',serif;
+
+font-size:36px;
+
+font-weight:600;
+
+color:#b4872d;
+
+letter-spacing:2px;
+
+}
+
+.convoy-header{
+
+position:relative;
+
+padding-bottom:18px;
+
+margin-bottom:30px;
+
+}
+
+.convoy-header::after{
+
+content:"";
+
+position:absolute;
+
+left:50%;
+
+bottom:0;
+
+transform:translateX(-50%);
+
+width:180px;
+
+height:2px;
+
+background:linear-gradient(
+90deg,
+transparent,
+#d4af37,
+transparent);
+
+}
+
+.info-item{
+
+margin-bottom:18px;
+
+font-size:17px;
+
+line-height:1.8;
+
+text-align:center;
+
+color:#444;
+
+}
+
+.full-card p{
+
+line-height:1.9;
+
+color:#555;
+
+margin-bottom:25px;
+
+text-align:center;
+
+}
+
+@media(min-width:700px){
+
+.cards-grid{
+
+grid-template-columns:1fr 1fr;
+
+}
+
+.full-card{
+
+grid-column:1 / span 2;
+
+}
+
+}
+</style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
 </head>
+
 <body>
-  <main class="page">
-    <section class="hero" aria-label="Hilal ve Hasan">
-      <img src="assets/hilal-hasan.jpeg" alt="Hilal ve Hasan'ın düğün fotoğrafı">
-      <div class="hero-content">
-        <div class="eyebrow">Bir ömür boyu mutluluğa</div>
-        <h1>Hilal <span class="amp">&amp;</span> Hasan</h1>
-        <div class="date-line">23 Ekim 2026 · Bafra / Samsun</div>
-      </div>
-    </section>
-    <section class="intro">
-      <div class="ornament">❦</div>
-      <p>Hayatımızın en anlamlı yolculuğuna birlikte adım atarken, bu özel günümüzde mutluluğumuzu sizlerle paylaşmaktan büyük onur duyacağız.</p>
-    </section>
-    <section class="countdown-wrap">
-      <h2>Düğünümüze Kalan Süre</h2>
-      <div class="countdown" aria-live="polite">
-        <div><strong id="days">00</strong><span>Gün</span></div>
-        <div><strong id="hours">00</strong><span>Saat</span></div>
-        <div><strong id="minutes">00</strong><span>Dakika</span></div>
-        <div><strong id="seconds">00</strong><span>Saniye</span></div>
-      </div>
-    </section>
-    <section class="details">
-      <h2>Düğün Bilgileri</h2>
-      <div class="details-grid">
-        <div class="detail"><div class="label">TARİH</div><div class="value">23 Ekim 2026</div><div class="sub">Cuma</div></div>
-        <div class="detail"><div class="label">SAAT</div><div class="value">19:00</div><div class="sub">Düğün başlangıcı</div></div>
-        <div class="detail"><div class="label">MEKÂN</div><div class="value">Ay Işığı Düğün Salonu</div><div class="sub">Bafra / Samsun</div></div>
-      </div>
-    </section>
-    <section class="schedule">
-      <h2>Günümüzün Akışı</h2>
-      <p class="lead">Bu güzel günde sizleri de aramızda görmekten mutluluk duyarız.</p>
-      <div class="event">
-        <div class="event-time">15:00 – 17:00</div>
-        <div><h3 class="event-title">Damat Evinde Yemek İkramı</h3><p class="event-desc">Adres: Gazipaşa Mah. Oğuzhan Cd. No:43</p></div>
-      </div>
-      <div class="event">
-        <div class="event-time">17:00</div>
-        <div><h3 class="event-title">Gelin Alma Konvoyu</h3><p class="event-desc">Saat 17:00'de konvoy ile damat evinden gelin almaya gidilecektir.</p></div>
-      </div>
-      <div class="event">
-        <div class="event-time">19:00</div>
-        <div><h3 class="event-title">Düğün Töreni</h3><p class="event-desc">Ay Işığı Düğün Salonu · Bafra / Samsun</p></div>
-      </div>
-    </section>
-    <footer class="footer">
-      <div class="ornament">❦</div>
-      <div class="names">Hilal &amp; Hasan</div>
-      <p>BU MUTLULUĞUMUZU BİZİMLE PAYLAŞTIĞINIZ İÇİN TEŞEKKÜR EDERİZ</p>
-    </footer>
-  </main>
-  <script>
-    const target = new Date(2026, 9, 23, 19, 0, 0).getTime();
-    const ids = ["days","hours","minutes","seconds"];
-    function updateCountdown() {
-      let diff = Math.max(0, target - Date.now());
-      const values = [
-        Math.floor(diff / 86400000),
-        Math.floor((diff % 86400000) / 3600000),
-        Math.floor((diff % 3600000) / 60000),
-        Math.floor((diff % 60000) / 1000)
-      ];
-      ids.forEach((id, i) => document.getElementById(id).textContent = String(values[i]).padStart(2,"0"));
+
+<audio id="music" preload="auto">
+<source src="./Por uno .mp3" type="audio/mpeg">
+</audio>
+
+<div id="envelope-screen" class="screen">
+    <div id="seal-hitbox"></div>
+</div>
+
+<div id="card-screen" class="screen">
+
+<div class="hero-card">
+
+    <img src="hilal-hasan.jpeg" class="invitation-image" alt="Hilal & Hasan Düğün Davetiyesi">
+
+<!-- Davet Metni -->
+
+<div class="invite-text">
+
+<div class="invite-flower">❦</div>
+
+<p>
+
+Hayatımızın en anlamlı yolculuğuna birlikte
+adım atarken, bu özel günümüzde mutluluğumuzu
+sizlerle paylaşmaktan büyük onur duyacağız.
+
+<br><br>
+
+Sevincimize ortak olmanız ve bu güzel
+anımızda yanımızda olmanız dileğiyle...
+
+</p>
+
+</div>
+
+<div class="event-box">
+
+    <h2>DÜĞÜNÜMÜZE KALAN SÜRE</h2>
+
+</div>
+
+<!-- Sayaç -->
+
+<div id="countdown">
+
+    <div class="counter-box">
+        <span id="days">00</span>
+        <small>Gün</small>
+    </div>
+
+    <div class="counter-box">
+        <span id="hours">00</span>
+        <small>Saat</small>
+    </div>
+
+    <div class="counter-box">
+        <span id="minutes">00</span>
+        <small>Dakika</small>
+    </div>
+
+    <div class="counter-box">
+        <span id="seconds">00</span>
+        <small>Saniye</small>
+    </div>
+
+</div>
+
+<div class="info-card full-card">
+
+        <h2>Düğün Bilgileri</h2>
+
+       <div class="info-grid">
+
+    <div class="info-box">
+        <div class="info-icon">
+    <i class="fa-regular fa-calendar"></i>
+</div>
+        <div class="info-title">TARİH</div>
+        <div class="info-value">
+            21 Ağustos 2026
+        </div>
+    </div>
+
+    <div class="info-box">
+        <div class="info-icon">
+    <i class="fa-regular fa-clock"></i>
+</div>
+        <div class="info-title">SAAT</div>
+        <div class="info-value">
+            19:00
+        </div>
+    </div>
+
+    <div class="info-box">
+        <div class="info-icon">
+    <i class="fa-solid fa-location-dot"></i>
+</div>
+        <div class="info-title">MEKAN</div>
+        <div class="info-value">
+            Altınkum Sosyal Tesisleri<br>
+            Atakum / Samsun
+        </div>
+    </div>
+
+</div>
+
+<div class="button-group">
+
+    <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Hilal%20%26%20Hasan%20Düğünü&dates=20260821T160000Z/20260821T200000Z&location=ALTINKUM%20SOSYAL%20TESİSLERİ,%20Atakum,%20Samsun&details=Sizleri%20düğünümüze%20bekliyoruz." target="_blank" class="gold-button">
+
+    📅 Takvime Ekle
+
+    </a>
+
+    <a href="https://maps.app.goo.gl/yJZUeLYu2yHa4QbC6" target="_blank" class="gold-button">
+
+    📍 Haritada Aç
+
+    </a>
+
+</div>
+
+</div> <!-- info-card -->
+
+<div class="cards-grid">
+
+    <div class="full-card">
+
+<div class="info-title-top">
+
+BİLGİLENDİRME
+
+</div>
+
+<div class="convoy-header">
+
+<img src="Car.PNG" class="car-icon" alt="Klasik Düğün Arabası">
+
+<h2>KONVOY</h2>
+
+</div>
+
+        <p>
+
+<strong>Saat 18:30</strong><br><br>
+
+Damat evinden hareket edilecektir.<br><br>
+
+Konvoyumuza katılarak bu özel günümüzde
+bizlerle birlikte olmanızdan büyük mutluluk duyarız.
+
+</p>
+
+    </div>
+
+</div> <!-- cards-grid -->
+
+</div> <!-- hero-card -->
+
+</div> <!-- card-screen -->
+
+<script>
+
+const seal = document.getElementById("seal-hitbox");
+const envelope = document.getElementById("envelope-screen");
+const card = document.getElementById("card-screen");
+const music = document.getElementById("music");
+
+let opened = false;
+
+seal.addEventListener("click", function () {
+
+    if (opened) return;
+
+    opened = true;
+
+    music.play().catch(() => {});
+
+    envelope.classList.add("open");
+
+    setTimeout(function () {
+
+        envelope.style.display = "none";
+
+        card.classList.add("show");
+
+    }, 1800);
+
+});
+
+const weddingDate = new Date("2026-08-21T19:00:00").getTime();
+
+function updateCountdown(){
+
+    const now = new Date().getTime();
+    const distance = weddingDate - now;
+
+    if(distance <= 0){
+
+        document.getElementById("days").textContent="00";
+        document.getElementById("hours").textContent="00";
+        document.getElementById("minutes").textContent="00";
+        document.getElementById("seconds").textContent="00";
+
+        return;
     }
-    updateCountdown();
-    setInterval(updateCountdown, 1000);
-  </script>
+
+    const days = Math.floor(distance/(1000*60*60*24));
+    const hours = Math.floor((distance%(1000*60*60*24))/(1000*60*60));
+    const minutes = Math.floor((distance%(1000*60*60))/(1000*60));
+    const seconds = Math.floor((distance%(1000*60))/1000);
+
+    document.getElementById("days").textContent = String(days).padStart(2,"0");
+    document.getElementById("hours").textContent = String(hours).padStart(2,"0");
+    document.getElementById("minutes").textContent = String(minutes).padStart(2,"0");
+    document.getElementById("seconds").textContent = String(seconds).padStart(2,"0");
+
+}
+
+updateCountdown();
+setInterval(updateCountdown,1000);
+
+</script>
+
 </body>
 </html>
