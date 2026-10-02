@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f5f0">
+  <meta name="description" content="Hilal ve Hasan'ın düğün davetiyesi — 23 Ekim 2026, Bafra / Samsun.">
+  <title>Hilal &amp; Hasan | Düğün Davetiyesi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root { --ink:#423a35; --muted:#85776e; --gold:#ad8c60; --paper:#fbf9f5; --line:#e8dfd4; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:Montserrat, sans-serif; }
+    .page { width:min(100% - 30px, 760px); margin:28px auto; background:#fffdfa; border:1px solid var(--line); box-shadow:0 18px 60px #57432b12; position:relative; overflow:hidden; }
+    .page:before,.page:after { content:""; position:absolute; inset:12px; border:1px solid #c9b18e55; pointer-events:none; z-index:2; }
+    .hero { min-height:690px; display:grid; grid-template-rows:1fr auto; position:relative; background:#d9d5cf; }
+    .hero img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center 52%; filter:grayscale(1); }
+    .hero:after { content:""; position:absolute; inset:0; background:linear-gradient(180deg,#16161618 0%,#15110d22 40%,#17110dba 100%); }
+    .hero-content { position:relative; z-index:1; align-self:end; text-align:center; color:white; padding:70px 24px 54px; }
+    .eyebrow { font-size:10px; letter-spacing:.35em; text-transform:uppercase; }
+    h1 { font:500 clamp(54px,10vw,88px)/.95 "Cormorant Garamond",serif; margin:18px 0 12px; letter-spacing:.02em; }
+    .amp { color:#e2c9a6; font-style:italic; }
+    .date-line { font-size:11px; letter-spacing:.26em; text-transform:uppercase; }
+    .intro { padding:52px 36px 44px; text-align:center; }
+    .ornament { color:var(--gold); font:30px "Cormorant Garamond",serif; margin-bottom:14px; }
+    .intro p { max-width:520px; margin:0 auto; color:#766b62; font:21px/1.55 "Cormorant Garamond",serif; }
+    .countdown-wrap { padding:30px 20px 38px; text-align:center; background:#f8f5ef; }
+    h2 { font:500 29px "Cormorant Garamond",serif; margin:0 0 22px; }
+    .countdown { display:flex; justify-content:center; gap:clamp(12px,4vw,38px); }
+    .countdown div { min-width:54px; }
+    .countdown strong { display:block; font:500 38px/1 "Cormorant Garamond",serif; color:var(--gold); }
+    .countdown span { display:block; margin-top:8px; font-size:9px; letter-spacing:.18em; color:var(--muted); text-transform:uppercase; }
+    .details { padding:46px 32px 42px; text-align:center; }
+    .details-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; max-width:620px; margin:0 auto; }
+    .detail { padding:19px 10px; border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+    .detail .label { color:var(--gold); font-size:9px; letter-spacing:.22em; margin-bottom:10px; }
+    .detail .value { font:22px/1.2 "Cormorant Garamond",serif; }
+    .detail .sub { color:var(--muted); font-size:10px; line-height:1.6; margin-top:6px; }
+    .schedule { margin:0 22px 42px; padding:32px 26px; background:#f8f5ef; text-align:center; }
+    .schedule h2 { margin-bottom:8px; }
+    .schedule .lead { color:var(--muted); font:italic 16px "Cormorant Garamond",serif; margin:0 0 22px; }
+    .event { max-width:510px; margin:0 auto; padding:14px 0; border-top:1px solid var(--line); display:grid; grid-template-columns:95px 1fr; gap:15px; text-align:left; }
+    .event-time { color:var(--gold); font-size:11px; font-weight:600; letter-spacing:.06em; padding-top:3px; }
+    .event-title { font:21px "Cormorant Garamond",serif; margin:0 0 5px; }
+    .event-desc { color:#786e65; font-size:11px; line-height:1.7; margin:0; }
+    .footer { text-align:center; padding:0 25px 50px; color:var(--muted); }
+    .footer .names { font:italic 28px "Cormorant Garamond",serif; color:var(--gold); }
+    .footer p { font-size:10px; letter-spacing:.1em; margin:8px 0 0; }
+    @media(max-width:560px) {
+      .page { width:100%; margin:0; border:0; }
+      .page:before,.page:after { inset:8px; }
+      .hero { min-height:590px; }
+      .intro { padding:42px 26px 35px; }
+      .intro p { font-size:19px; }
+      .details { padding:38px 20px; }
+      .details-grid { grid-template-columns:1fr; gap:0; }
+      .detail { border-bottom:0; padding:15px 8px; }
+      .detail:last-child { border-bottom:1px solid var(--line); }
+      .schedule { margin:0 16px 34px; padding:28px 18px; }
+      .event { grid-template-columns:76px 1fr; gap:10px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="hero" aria-label="Hilal ve Hasan">
+      <img src="assets/hilal-hasan.jpeg" alt="Hilal ve Hasan'ın düğün fotoğrafı">
+      <div class="hero-content">
+        <div class="eyebrow">Bir ömür boyu mutluluğa</div>
+        <h1>Hilal <span class="amp">&amp;</span> Hasan</h1>
+        <div class="date-line">23 Ekim 2026 · Bafra / Samsun</div>
+      </div>
+    </section>
+    <section class="intro">
+      <div class="ornament">❦</div>
+      <p>Hayatımızın en anlamlı yolculuğuna birlikte adım atarken, bu özel günümüzde mutluluğumuzu sizlerle paylaşmaktan büyük onur duyacağız.</p>
+    </section>
+    <section class="countdown-wrap">
+      <h2>Düğünümüze Kalan Süre</h2>
+      <div class="countdown" aria-live="polite">
+        <div><strong id="days">00</strong><span>Gün</span></div>
+        <div><strong id="hours">00</strong><span>Saat</span></div>
+        <div><strong id="minutes">00</strong><span>Dakika</span></div>
+        <div><strong id="seconds">00</strong><span>Saniye</span></div>
+      </div>
+    </section>
+    <section class="details">
+      <h2>Düğün Bilgileri</h2>
+      <div class="details-grid">
+        <div class="detail"><div class="label">TARİH</div><div class="value">23 Ekim 2026</div><div class="sub">Cuma</div></div>
+        <div class="detail"><div class="label">SAAT</div><div class="value">19:00</div><div class="sub">Düğün başlangıcı</div></div>
+        <div class="detail"><div class="label">MEKÂN</div><div class="value">Ay Işığı Düğün Salonu</div><div class="sub">Bafra / Samsun</div></div>
+      </div>
+    </section>
+    <section class="schedule">
+      <h2>Günümüzün Akışı</h2>
+      <p class="lead">Bu güzel günde sizleri de aramızda görmekten mutluluk duyarız.</p>
+      <div class="event">
+        <div class="event-time">15:00 – 17:00</div>
+        <div><h3 class="event-title">Damat Evinde Yemek İkramı</h3><p class="event-desc">Adres: Gazipaşa Mah. Oğuzhan Cd. No:43</p></div>
+      </div>
+      <div class="event">
+        <div class="event-time">17:00</div>
+        <div><h3 class="event-title">Gelin Alma Konvoyu</h3><p class="event-desc">Saat 17:00'de konvoy ile damat evinden gelin almaya gidilecektir.</p></div>
+      </div>
+      <div class="event">
+        <div class="event-time">19:00</div>
+        <div><h3 class="event-title">Düğün Töreni</h3><p class="event-desc">Ay Işığı Düğün Salonu · Bafra / Samsun</p></div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="ornament">❦</div>
+      <div class="names">Hilal &amp; Hasan</div>
+      <p>BU MUTLULUĞUMUZU BİZİMLE PAYLAŞTIĞINIZ İÇİN TEŞEKKÜR EDERİZ</p>
+    </footer>
+  </main>
+  <script>
+    const target = new Date(2026, 9, 23, 19, 0, 0).getTime();
+    const ids = ["days","hours","minutes","seconds"];
+    function updateCountdown() {
+      let diff = Math.max(0, target - Date.now());
+      const values = [
+        Math.floor(diff / 86400000),
+        Math.floor((diff % 86400000) / 3600000),
+        Math.floor((diff % 3600000) / 60000),
+        Math.floor((diff % 60000) / 1000)
+      ];
+      ids.forEach((id, i) => document.getElementById(id).textContent = String(values[i]).padStart(2,"0"));
+    }
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+  </script>
+</body>
+</html>
